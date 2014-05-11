@@ -17,7 +17,7 @@ data <- data[data$Date >= '2007-02-01' & data$Date <= '2007-02-02',]
 data$Time <- strptime(paste(data$Date,data$Time), '%Y-%m-%d %H:%M:%S')
 
 # form and save figure 4
-png('plot4.png', width = 480, height = 480)
+png('plot1.png', width = 480, height = 480, bg="transparent")
 par(mfrow = c(2,2))
 plot(data$Time, data$Global_active_power, type = 'l', xlab = '', 
      ylab = 'Global Active Power (kilowatts)')
