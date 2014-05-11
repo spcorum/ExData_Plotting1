@@ -17,7 +17,7 @@ data <- data[data$Date >= '2007-02-01' & data$Date <= '2007-02-02',]
 data$Time <- strptime(paste(data$Date,data$Time), '%Y-%m-%d %H:%M:%S')
 
 # form and save figure 3
-png('plot1.png', width = 480, height = 480, bg="transparent")
+png('plot3.png', width = 480, height = 480, bg="transparent")
 plot(data$Time, data$Sub_metering_1, type = 'l', xlab = '', 
      ylab = 'Energy sub metering', col = 'black')
 lines(data$Time, data$Sub_metering_2, type = 'l', col = 'red')
