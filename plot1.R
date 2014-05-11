@@ -17,7 +17,7 @@ data <- data[data$Date >= '2007-02-01' & data$Date <= '2007-02-02',]
 data$Time <- strptime(paste(data$Date,data$Time), '%Y-%m-%d %H:%M:%S')
 
 # form and save figure 1
-png('plot1.png', width = 480, height = 480)
+png('plot1.png', width = 480, height = 480, bg="transparent")
 hist(data$Global_active_power, col = 'red', main = 'Global Active Power',
      xlab = 'Global Active Power (kilowatts)')
 dev.off()
