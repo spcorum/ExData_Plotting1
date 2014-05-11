@@ -18,7 +18,7 @@ data$Time <- strptime(paste(data$Date,data$Time), '%Y-%m-%d %H:%M:%S')
 
 
 # form and save figure 2
-png('plot1.png', width = 480, height = 480, bg="transparent")
+png('plot2.png', width = 480, height = 480, bg="transparent")
 plot(data$Time, data$Global_active_power, type = 'l', xlab = '', 
      ylab = 'Global Active Power (kilowatts)')
 dev.off()
